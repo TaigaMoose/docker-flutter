@@ -1,8 +1,6 @@
 # docker-flutter
 
-Repository: https://github.com/TaigaMoose/docker-flutter  
-  
-Fork of matspfeiffer/flutter image with:
+Fork of `matspfeiffer/flutter` image with:
   
 - Raised Flutter version (Currently -> 1.22.2)  
 - Fixed entrypoint.sh script (Add checking if $1 argument is 'flutter' & avoid)  
