@@ -58,8 +58,10 @@ RUN curl -o flutter.tar.xz $FLUTTER_URL \
   && flutter emulators --create \
   && flutter update-packages
 
-COPY entrypoint.sh /usr/local/bin/
+COPY docker-entrypoint.sh /usr/local/bin/
 COPY chown.sh /usr/local/bin/
 COPY flutter-android-emulator.sh /usr/local/bin/flutter-android-emulator
 COPY flutter-web.sh /usr/local/bin/flutter-web
-ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
+
+ENTRYPOINT ["/usr/local/bin/docker-entrypoint.sh"]
+CMD ["flutter --help"]
