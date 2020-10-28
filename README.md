@@ -1,6 +1,6 @@
 # docker-flutter
 
-Fork of `matspfeiffer/flutter` image with:
+Fork of `matspfeiffer/flutter` image with:  
   
 - Raised Flutter version (Currently -> 1.22.2)  
 - Refactoring entrypoint script (currently working with Jenkins CI)
